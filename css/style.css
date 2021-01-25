@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 300px));
+    grid-template-rows: repeat(3, minmax(100px, auto));
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+    grid-auto-flow: dense;
+}
+
+.grid-elem {
+    background-color: rgba(1, 1, 96, 1);
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 26px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
